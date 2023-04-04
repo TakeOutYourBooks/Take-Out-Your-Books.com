@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Out Your Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+        .img1{border-radius:50px ;
+      object-fit: cover;
+            float:right;
+        margin-right: 10px;
+        width: 650px;
+        transition: transform .2s;
+
+      }
+      .img1:hover {
+  -ms-transform: scale(0.5); 
+  -webkit-transform: scale(0.5); 
+  transform: scale(0.5); 
+      }
+
+    p{
+        color: darkblue;
+        font-size: xx-large;
+       }
+       body {
+        background-color: lightblue;
+        transition: background-color 5s ease;
+		}
+
+	button{
+   color: slateblue;
+  margin-right: 100px;
+    background-color: transparent;
+  font-size: xx-large;
+   border: 1px;
+   border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: transform .2s;
+
+    }
+    button:hover{
+        color: cornflowerblue;
+        -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+
+    }
+
+
+
+.dropbtn {
+  background-color: transparent;
+  color: yellow;
+  padding: 10px;
+  font-size: xx-large;
+  border: none;
+  cursor: pointer;
+  background-color: plum;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color:tomato;
+}
+
+.dropdown-content a {
+  color:black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  background-color: aquamarine;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1 ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#Btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#Btn:hover {
+  background-color: #555;
+}
+.greeting{
+    animation:  greeting 1s ease-in-out infinite alternate;
+    text-align: center;
+
+}
+
+@keyframes  greeting{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+}
+
+  
+
+    </style>
+
+        </head>
+    <body>
+
+        <button onclick="topFunction()" id="Btn" title="Go to top">↑</button>
+    
+        <h1 class="greeting" id="greetings"> 
+        </h1>
+    
+    
+        <div class="dropdown">
+            
+                <button class="dropbtn">NCERT Books▼ </button>
+
+    
+            <div class="dropdown-content">
+               
+              <a href="Maths class 6/maths 6.html">Class 6: Maths</a>
+              <a href="Science class 6/science 6.html">Class 6: Science</a>
+           <a href="Maths class 7/maths 7.html">Class 7: Maths</a>
+           <a href="Science class 7/science 7.html">Class 7: Science</a>
+           <a href="Maths class 8/maths 8.html">Class 8: Maths</a>
+           <a href="Science class 8/science 8.html">Class 8: Science</a>
+           <a href="Maths class 9/maths 9.html">Class 9: Maths</a>
+           <a href="Science class 9/science 9.html">Class 9: Science</a>
+           <a href="Maths class 10/maths 10.html">Class 10: Maths</a>
+           <a href="Science class 10/science 10.html">Class 10: Science</a>
+           <a href="Maths class 11/maths 11.html">Class 11: Maths</a>
+           <a href="Physics class 11/physics 11.html">Class 11: Physics</a>
+           <a href="Chemistry class 11/chemistry 11.html">Class 11: Chemistry</a>
+           <a href="Biology class 11/biology 11.html">Class 11: Biology</a>
+           <a href="Maths class 12/maths 12.html">Class 12: Maths</a>
+           <a href="Physics class 12/physics 12.html">Class 12: Physics</a>
+           <a href="Chemistry class 12/chemistry 12.html">Class 12: Chemistry</a>
+           <a href="Biology class 12/biology 12.html">Class 12: Biology</a>
+
+        </div>
+        
+          </div>
+        
+          
+
+        <img class="img1" src="images/classroom.jpg" alt="classroom">
+            <p>
+                Class 6
+            </p>
+            <p>
+                NCERT Books for Class 6: Maths -
+                <a href="Maths class 6/maths 6.html"><button>Click me</button></a>
+            </p>
+        <p>
+            NCERT Books for Class : Science -
+            <a href="Science class 6/science 6.html"><button>  Click me</button>
+            </a>
+        </p>
+        <p>
+            Class 7
+        </p>
+        <p>
+            NCERT Books for Class 7: Maths -
+            <a href="Maths class 7/maths 7.html"><button>Click me</button>
+            </a>
+        </p>
+        <P>
+         NCERT Books for Class 7: Science -
+            <a href="Science class 7/science 7.html"><button>Click me</button>
+             </a>
+        <p>
+            Class 8
+         </p>
+         <p>
+           NCERT Books for Class 8: Maths -
+           <a href="Maths class 8/maths 8.html"><button>Click me</button></a>
+           </p>
+            <p>
+                NCERT Books for Class 8: Science -
+          <a href="Science class 8/science 8.html"><button>Click me</button></a>
+            </p>
+         <p>
+            Class 9
+         </p>
+     <p>
+        NCERT Books for Class 9: Maths -
+        <a href="Maths class 9/maths 9.html"><button>Click me</button></a>
+     </p>
+    
+      <img class="img1" src="images/Captain.jpg" alt="Captain America Motivates">
+
+     
+     <p>
+        NCERT Books for Class 9: Science -
+        <a href="Science class 9/science 9.html"><button>Click me</button></a>
+     </p>
+     <p>
+         Class 10
+        
+     </p>
+     <p>
+        NCERT Books for Class 10: Maths -
+        <a href="Maths class 10/maths 10.html"><button>click me</button> </a>
+     </p> 
+     <p>  
+        NCERT Books for Class 10 : Science -
+      <a href="Science class 10/science 10.html"><button> Click me</button>
+      </a>
+      </p>
+     <p>
+            Class 11
+     </p>
+     <p>
+        NCERT Books for Class 11: Maths -
+        <a href="Maths class 11/maths 11.html"><button>Click me</button>  
+            </a>
+     </p>
+     <p>
+        NCERT Books for class 11: Physics -
+        <a href="Physics class 11/physics 11.html"> <button>Click me</button> </a>
+     </p>
+    <p>
+        NCERT Books for Class 11: Chemistry -
+        <a href="Chemistry class 11/chemistry 11.html"><button>Click me</button></a>
+    </p>
+    <p>
+        NCERT Books for Class 11: Biology -
+
+        <a href="Biology class 11/biology 11.html"><button>Click me</button></a>
+    </p>
+    <img class="img1" src="images/Superhero.png" alt="Superheroes earned degrees">
+    <p>
+        Class 12
+    </p>
+    <p>
+    NCERT Books for Class 12: Maths -
+        <a href="Maths Class 12/maths 12.html"> <button>Click me</button></a>
+    </p>
+    <p>
+        NCERT Books for Class 12: Physics -
+        <a href="Physics class 12/physics 12.html"><button>Click me..</button></a>
+    </p>
+    <p>
+        NCERT Books for Class 12: Chemistry -
+        <a href="Chemistry class 12/chemistry 12.html"><button>Open me</button></a>
+    </p>
+    <p>
+        NCERT Books for Class 12: Biology -
+        <a href="Biology class 12/biology 12.html"><button>Open me</button></a>
+    </p>
+   <script>
+      function changeColor() {
+        var colors = ['#ffebcd', '#5f9ea0', '#fff0fs', '#ffb6c1', '#afeeee', '#f5deb3'];
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = color;
+        setTimeout(changeColor, 1000);
+      }
+      changeColor();
+
+     
+      var time = new Date().getHours();
+    
+    
+    if (time >= 5 && time < 12) {
+        document.getElementById("greetings").innerHTML = "Have a great start to your day!";
+    } else if (time >= 12 && time < 18) {
+        document.getElementById("greetings").innerHTML = "Hey, How's your day going so far?";
+    } else if (time >= 18 && time < 22) {
+        document.getElementById("greetings").innerHTML = "Hey, How's your evening going?" ;
+    } else {
+        document.getElementById("greetings").innerHTML = "How was your day...?";
+    }
+
+    function openNewPage() {
+  window.location.href="feedback/feedback.html";
+};
+
+
+
+let mybutton = document.getElementById("Btn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+   </script>
+    
+</body>
+</html>

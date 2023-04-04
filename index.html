@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    Take Out Your Books
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="You can check out this website for getting the CBSE Textbooks which you are studying and the books are available with free of cost. WELCOME EVERYONE!
+        You can take books of subjects such as Maths,Science">
+    
+
+
+    
+     <style> 
+    
+      .btn {
+   color: tomato;
+  margin-right: 100px;
+   top: 70%;
+    background-color: transparent;
+  font-size: xx-large;
+   border: 1px;
+   border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 25px;
+  
+  }
+  .btn:hover {
+  background-color: lightgray;
+  
+}
+    body{
+     margin-top: 0;
+      margin-left: 0;
+     width: 1575px;
+     height: 1000px;
+     background-image: url(images/books.jpeg);
+     background-position: center;
+     background-size: cover;
+     overflow:hidden;
+     margin-bottom: 0;
+    }
+    h1{
+      color: gold;
+      font-size: 50px;
+      margin-left: 50px;
+
+    }
+    h2{
+      color: lightskyblue;
+      font-size: 100px;
+      margin-top: 5%;
+      margin-left: 20px;
+    }
+    .bubbles img{
+      width: 40px;
+    animation: bubble 7s linear infinite;
+    border-radius: 20px;
+    }
+    .bubbles{
+      width: 100%;
+      display: flex;
+       align-items: center;
+       justify-content: space-around;
+       position: absolute;
+       bottom:0;
+    }
+    @keyframes bubble {
+      0%{
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50%{
+        
+        opacity: 1;
+      }
+      70%{
+        
+        opacity: 1;
+      }
+     100%{
+        transform: translateY(-80vh); 
+        opacity: 0;
+      }
+    }
+    .bubbles img:nth-child(1){
+      animation-delay: 2s;
+    }
+    .bubbles img:nth-child(2){
+      animation-delay: 1s;
+    }
+    .bubbles img:nth-child(3){
+      animation-delay: 3.7s;
+    }
+    .bubbles img:nth-child(4){
+      animation-delay: 2s;
+    }
+    .bubbles img:nth-child(5){
+      animation-delay: 3s;
+    }
+    .bubbles img:nth-child(6){
+      animation-delay: 5s;
+    }
+    .bubbles img:nth-child(7){
+      animation-delay: 3.5s;
+    }
+    </style>
+    </head>
+    <body>
+      <h1 id="greeting"></h1>
+
+      <h2>Download your books and start your studies </h2>
+
+      <button id="btn" class="btn">
+        Open your books→	
+                </button>
+       <div class="bubbles">
+       <img src="images/bubble.png" alt="bubbles">
+
+       <img src="images/bubble.png" alt="bubbles">
+
+       <img src="images/bubble.png" alt="bubbles">
+
+       <img src="images/bubble.png" alt="bubbles">
+        
+        <img src="images/bubble.png" alt="bubbles">
+
+        <img src="images/bubble.png" alt="bubbles">
+
+        <img src="images/bubble.png" alt="bubbles">
+
+
+      </div>  
+     <script>
+
+            const homebutton = document.getElementById("btn");
+            homebutton.addEventListener("click", () => {
+          window.location.href = "Html pages/downloadPage.html";
+            });
+
+  
+        
+        var time = new Date().getHours();
+    
+    
+        if (time >= 5 && time < 12) {
+            document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (time >= 12 && time < 18) {
+            document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else if (time >= 18 && time < 22) {
+            document.getElementById("greeting").innerHTML = "Good evening!";
+        } else {
+            document.getElementById("greeting").innerHTML = "Good night!";
+        }
+    
+
+        </script>
+     </body>
+     </html>
